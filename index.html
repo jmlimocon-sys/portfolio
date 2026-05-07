@@ -3,323 +3,516 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaymar M. Limocon | IT Expert</title>
+
+  <title>
+    Jaymar M. Limocon | Administrative & IT Support Professional
+  </title>
+
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
-  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap)" rel="stylesheet">
-  <link rel="stylesheet" href="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css)">
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
 </head>
+
 <body>
+
   <!-- ===== NAVBAR ===== -->
   <header id="navbar" class="navbar">
+
     <div class="navbar-container">
+
       <a href="#hero" class="logo">
-        <span class="logo-bracket">&lt;</span>JML<span class="logo-bracket">/&gt;</span>
+        <span class="logo-bracket">&lt;</span>
+        JML
+        <span class="logo-bracket">/&gt;</span>
       </a>
+
       <nav>
         <ul class="nav-links">
-          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="menu-toggle" aria-label="Toggle menu">
-          <span class="hamburger"></span>
-        </button>
       </nav>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button class="menu-toggle">
+        <span class="hamburger"></span>
+      </button>
+
     </div>
+
   </header>
+
   <!-- ===== HERO ===== -->
   <section id="hero" class="hero">
-    <div class="hero-content">
-      <div class="hero-badge">Available for opportunities</div>
-      <h1>JAYMAR M. LIMOCON</h1>
-      <h2 class="typing-wrapper">
-        <span class="typing"></span>
-        <span class="cursor">|</span>
-      </h2>
-      <p>Building and maintaining reliable systems, networks, and IT infrastructure with precision and care.</p>
-      <div class="hero-btns">
-        <a href="#" class="btn btn-primary">
-          <i class="fa-solid fa-download"></i> Download CV
-        </a>
-        <a href="#contact" class="btn btn-secondary">
-          <i class="fa-solid fa-envelope"></i> Contact Me
-        </a>
-      </div>
-      <div class="hero-scroll">
-        <a href="#about">
-          <span>Scroll to explore</span>
-          <i class="fa-solid fa-chevron-down"></i>
-        </a>
-      </div>
-    </div>
+
+    <!-- OPTIONAL BACKGROUND -->
     <div class="hero-bg">
       <div class="gradient-orb orb-1"></div>
       <div class="gradient-orb orb-2"></div>
       <div class="grid-overlay"></div>
     </div>
-  </section>
+
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        Available for Admin & Project Support
+      </div>
+
+      <h1>JAYMAR M. LIMOCON</h1>
+
+      <!-- ===== TYPING EFFECT ===== -->
+      <div class="typing-wrapper">
+        <span class="typing"></span>
+        <span class="cursor">|</span>
+      </div>
+
+      <p>
+        Administrative & IT Support Professional
+      </p>
+
+        <!-- ===== FIXED TYPING EFFECT ===== -->
+        <div class="typing-wrapper">
+          <span id="typing-text"></span>
+        </div>
+        <div class="hero-btns">
+
+          <a
+            href="mailto:jaymarlimocon@gmail.com"
+            class="btn btn-primary"
+          >
+            Hire Me
+          </a>
+
+          <a
+            href="Jaymar_Limocon_CV.pdf"
+            download
+            class="btn btn-secondary"
+          >
+            <i class="fa-solid fa-download"></i>
+            Download CV
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>  
+
   <!-- ===== ABOUT ===== -->
   <section id="about" class="section">
+
     <div class="section-container">
+
       <div class="section-header">
-        <span class="section-tag">Introduction</span>
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title">
+          Professional Summary
+        </h2>
       </div>
+
       <div class="about-content fade-up">
-        <div class="about-text">
-          <p>
-            Detail-oriented IT professional with extensive experience in <strong>system administration</strong>, 
-            <strong>networking</strong>, <strong>virtualization</strong>, <strong>database management</strong>, 
-            and <strong>technical support</strong>.
-          </p>
-          <p>
-            Skilled in both hardware and software environments with strong problem-solving capabilities 
-            and meticulous documentation practices. Passionate about building robust, scalable 
-            infrastructure solutions.
-          </p>
-        </div>
-        <div class="about-stats">
-          <div class="stat-item">
-            <span class="stat-number">7+</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">50+</span>
-            <span class="stat-label">Systems Managed</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">100%</span>
-            <span class="stat-label">Commitment</span>
-          </div>
-        </div>
+
+        <p>
+          Detail-oriented
+          <strong>
+            Administrative and IT Support professional
+          </strong>
+          with extensive experience in data management,
+          system administration, and office operations.
+          Expert in maintaining accurate documentation,
+          preparing compliance reports, and providing
+          technical assistance to ensure seamless
+          organizational workflows.
+        </p>
+
       </div>
+
     </div>
+
   </section>
+
   <!-- ===== SKILLS ===== -->
   <section id="skills" class="section section-alt">
+
     <div class="section-container">
+
       <div class="section-header">
-        <span class="section-tag">Expertise</span>
-        <h2 class="section-title">Technical Skills</h2>
+        <h2 class="section-title">
+          Core Skills
+        </h2>
       </div>
+
       <div class="skills-grid fade-up">
+
         <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fa-solid fa-desktop"></i>
-          </div>
-          <h3>Hardware & Systems</h3>
-          <ul>
-            <li>PC/Laptop Troubleshooting</li>
-            <li>CCTV / NVR Installation</li>
-            <li>Switch Configuration</li>
-          </ul>
+          <i class="fa-solid fa-briefcase"></i>
+
+          <h3>Admin & Operations</h3>
+
+          <p>
+            Office Management, Calendar Coordination,
+            Inventory & Asset Tracking.
+          </p>
         </div>
+
         <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fa-solid fa-server"></i>
-          </div>
-          <h3>OS & Virtualization</h3>
-          <ul>
-            <li>Windows 7/10/11, Server 2012 R2</li>
-            <li>Proxmox VE (VM & Containers)</li>
-            <li>pfSense Firewall</li>
-          </ul>
+          <i class="fa-solid fa-desktop"></i>
+
+          <h3>IT & Systems</h3>
+
+          <p>
+            System Monitoring, Database Backups,
+            Network Support, OBS, Zoom Facilitation.
+          </p>
         </div>
+
         <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fa-solid fa-network-wired"></i>
-          </div>
-          <h3>Networking</h3>
-          <ul>
-            <li>LAN/WAN Setup</li>
-            <li>VLAN Configuration</li>
-            <li>IP Addressing & Subnetting</li>
-          </ul>
+          <i class="fa-solid fa-user-shield"></i>
+
+          <h3>Data & Compliance</h3>
+
+          <p>
+            Records Management, Data Privacy,
+            MS Office Suite.
+          </p>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fa-solid fa-code"></i>
-          </div>
-          <h3>Development</h3>
-          <ul>
-            <li>PHP + MySQL</li>
-            <li>VB.NET / VB6</li>
-            <li>CRUD & Authentication Systems</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fa-solid fa-pen-nib"></i>
-          </div>
-          <h3>Design & Multimedia</h3>
-          <ul>
-            <li>Adobe Photoshop</li>
-            <li>CorelDRAW</li>
-            <li>Filmora</li>
-          </ul>
-        </div>
+
       </div>
+
     </div>
+
   </section>
+
   <!-- ===== EXPERIENCE ===== -->
   <section id="experience" class="section">
+
     <div class="section-container">
+
       <div class="section-header">
-        <span class="section-tag">Career Path</span>
-        <h2 class="section-title">Work Experience</h2>
+        <h2 class="section-title">
+          Work Experience
+        </h2>
       </div>
+
       <div class="timeline fade-up">
+
+        <!-- JOB 1 -->
         <div class="timeline-item">
+
           <div class="timeline-marker"></div>
+
           <div class="timeline-content">
+
             <div class="timeline-header">
-              <h3>Administrative Officer II / IT Support</h3>
-              <span class="timeline-date">2024 – Present</span>
+
+              <h3>
+                Administrative Officer II (CMT I)
+              </h3>
+
+              <span class="timeline-date">
+                April 2024 – Present
+              </span>
+
             </div>
-            <p class="timeline-company">University of Southeastern Philippines</p>
+
+            <p class="timeline-company">
+              University of Southeastern Philippines –
+              Tagum-Mabini Campus
+            </p>
+
             <ul>
-              <li>System administration (enrollment, inventory, clearance)</li>
-              <li>Database backup and maintenance</li>
-              <li>ICT asset management, email, Zoom/OBS support</li>
+              <li>
+                Provides technical specifications for ICT equipment.
+              </li>
+
+              <li>
+                Manages institutional systems ensuring data integrity.
+              </li>
+
+              <li>
+                Serves as Document Control Custodian and Compliance Officer.
+              </li>
+
+              <li>
+                Coordinates official events and virtual meetings.
+              </li>
+
+              <li>
+                Prepares reports and ICT asset inventory inspections.
+              </li>
             </ul>
+
           </div>
+
         </div>
+
+        <!-- JOB 2 -->
         <div class="timeline-item">
+
           <div class="timeline-marker"></div>
+
           <div class="timeline-content">
+
             <div class="timeline-header">
+
               <h3>Technical Staff</h3>
-              <span class="timeline-date">2021 – 2024</span>
+
+              <span class="timeline-date">
+                Sept 2021 – March 2024
+              </span>
+
             </div>
+
+            <p class="timeline-company">
+              University of Southeastern Philippines –
+              Tagum-Mabini Campus
+            </p>
+
             <ul>
-              <li>System support & database maintenance</li>
-              <li>ICT documentation and reporting</li>
+              <li>
+                Executed system operations and maintained backups.
+              </li>
+
+              <li>
+                Provided technical support to campus personnel.
+              </li>
+
+              <li>
+                Performed preventive maintenance and inventory tracking.
+              </li>
             </ul>
+
           </div>
+
         </div>
+
+        <!-- JOB 3 -->
         <div class="timeline-item">
+
           <div class="timeline-marker"></div>
+
           <div class="timeline-content">
+
             <div class="timeline-header">
+
               <h3>IT Support Staff</h3>
-              <span class="timeline-date">2018 – 2021</span>
+
+              <span class="timeline-date">
+                Oct 2018 – Sept 2021
+              </span>
+
             </div>
+
+            <p class="timeline-company">
+              JHG Trading Incorporated – Tagum City
+            </p>
+
             <ul>
-              <li>Branch IT support, network troubleshooting</li>
-              <li>Inventory management</li>
+              <li>
+                Managed ICT equipment records and repairs.
+              </li>
+
+              <li>
+                Resolved complex network and system issues.
+              </li>
+
+              <li>
+                Assisted in procurement and asset inventory.
+              </li>
             </ul>
+
           </div>
+
         </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Office Aide</h3>
-              <span class="timeline-date">2017 – 2018</span>
-            </div>
-            <ul>
-              <li>Admin system support, records handling</li>
-            </ul>
-          </div>
-        </div>
+
       </div>
+
     </div>
+
   </section>
+
   <!-- ===== EDUCATION ===== -->
   <section id="education" class="section section-alt">
+
     <div class="section-container">
-      <div class="section-header">
-        <span class="section-tag">Background</span>
-        <h2 class="section-title">Education & Certifications</h2>
+
+      <div class="edu-grid">
+
+        <div class="edu-card">
+
+          <h3>Education</h3>
+
+          <p>
+            <strong>
+              Bachelor of Science in Information Technology
+            </strong>
+
+            <br>
+
+            Northwest Samar State University
+            | 2013 – 2017
+          </p>
+
+        </div>
+
+        <div class="edu-card">
+
+          <h3>Certification & Eligibility</h3>
+
+          <ul>
+            <li>
+              Career Service Professional Eligibility
+            </li>
+
+            <li>
+              Career Service Subprofessional Eligibility
+            </li>
+
+            <li>
+              NC II: Computer Systems Servicing
+            </li>
+          </ul>
+
+        </div>
+
       </div>
-      <div class="edu-grid fade-up">
-        <div class="edu-card">
-          <div class="edu-icon">
-            <i class="fa-solid fa-graduation-cap"></i>
+
+    </div>
+
+  </section>
+
+ <!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+
+  <div class="section-container">
+
+    <div class="section-header">
+      <h2 class="section-title">
+        Let's Work Together
+      </h2>
+
+      <p class="contact-subtitle">
+        Open for administrative support, IT projects,
+        technical assistance, and freelance opportunities.
+      </p>
+    </div>
+
+    <div class="contact-wrapper fade-up">
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+
+          <div>
+            <h4>Email</h4>
+
+            <a href="mailto:jaymarlimocon@gmail.com">
+              jaymarlimocon@gmail.com
+            </a>
           </div>
-          <h3>BS Information Technology</h3>
-          <p>NwSSU • 2013 – 2017</p>
         </div>
-        <div class="edu-card">
-          <div class="edu-icon">
-            <i class="fa-solid fa-certificate"></i>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+
+          <div>
+            <h4>Phone</h4>
+
+            <span>
+              +63 926 766 0208
+            </span>
           </div>
-          <h3>Civil Service Eligibility</h3>
-          <p>Professional & Subprofessional</p>
         </div>
-        <div class="edu-card">
-          <div class="edu-icon">
-            <i class="fa-solid fa-award"></i>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+
+          <div>
+            <h4>Location</h4>
+
+            <span>
+              Tagum City, Davao del Norte, Philippines
+            </span>
           </div>
-          <h3>NCII Certification</h3>
-          <p>Computer Systems Servicing</p>
         </div>
+
+      </div>
+
+<!-- CONTACT FORM -->
+<div class="contact-container">
+  <form class="contact-form" action="https://formsubmit.co/jaymarlimocon@gmail.com" method="POST">
+    
+    <!-- Configuration -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Portfolio Inquiry">
+    <input type="hidden" name="_next" value="https://jmlimocon.vercel.app/">
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Juan Dela Cruz" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="juan@example.com" required>
       </div>
     </div>
-  </section>
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section">
-    <div class="section-container">
-      <div class="section-header">
-        <span class="section-tag">Get in Touch</span>
-        <h2 class="section-title">Contact Me</h2>
-      </div>
-      <div class="contact-wrapper fade-up">
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="contact-details">
-              <span class="contact-label">Email</span>
-              <a href="mailto:jaymarlimocon@gmail.com">jaymarlimocon@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fa-solid fa-phone"></i>
-            </div>
-            <div class="contact-details">
-              <span class="contact-label">Phone</span>
-              <a href="tel:+639267660208">+63 926 766 0208</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <div class="contact-details">
-              <span class="contact-label">Location</span>
-              <span>Tagum City, Davao del Norte, Philippines</span>
-            </div>
-          </div>
-        </div>
-        <div class="socials">
-          <a href="#" aria-label="LinkedIn" class="social-link">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="#" aria-label="GitHub" class="social-link">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="#" aria-label="Facebook" class="social-link">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </div>
-      </div>
+
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Job Opportunity" required>
     </div>
-  </section>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Hi Jaymar, I'd like to talk about..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">
+      <span>Send Message</span>
+      <i class="fa-solid fa-paper-plane"></i>
+    </button>
+  </form>
+</div>
+
+    </div>
+
+  </div>
+
+</section>
+
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>&copy; 2024 Jaymar M. Limocon. All rights reserved.</p>
+    <p>
+      &copy; 2026 Jaymar M. Limocon |
+      Admin & IT Support Professional
+    </p>
   </footer>
-  <button id="backToTop" aria-label="Back to top">
-    <i class="fa-solid fa-chevron-up"></i>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button id="backToTop">
+    <i class="fa-solid fa-arrow-up"></i>
   </button>
+
 </body>
 </html>
