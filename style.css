@@ -923,3 +923,93 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+:root {
+  --primary-color: #3b82f6; /* Pwedeng palitan base sa theme mo */
+  --primary-hover: #2563eb;
+  --bg-input: #f9fafb;
+  --text-main: #ffffff;
+  --transition: all 0.3s ease;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;  
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Responsive adjustment para sa mobile */
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.form-group input, 
+.form-group textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: var(--bg-input);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+  background-color: #fff;
+}
+
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
