@@ -173,3 +173,37 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+<script>
+  const form = document.querySelector('.contact-form');
+  
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Stop muna natin yung normal na pag-lipat ng page
+
+    const formData = new FormData(this);
+
+    // Dito natin ise-send ang data sa background
+    fetch(this.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      // Kapag okay na, automatic siyang babalik sa home
+      if (response.ok) {
+        // Option A: I-refresh ang page
+        window.location.reload(); 
+        
+        // Option B: Kung gusto mo specific URL:
+        // window.location.href = "https://jmlimocon.vercel.app/";
+      } else {
+        alert("May error sa pag-send.");
+      }
+    })
+    .catch(error => {
+      console.log("Error:", error);
+    });
+  });
+</script>
