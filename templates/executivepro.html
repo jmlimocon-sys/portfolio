@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Executive Luxury Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+BASE
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#050507;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* =========================
+LUXURY GRADIENT BACKDROP
+========================= */
+
+.bg{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    background:
+    radial-gradient(circle at 20% 20%, rgba(212,175,55,0.15), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(124,124,255,0.18), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(255,60,172,0.10), transparent 50%);
+}
+
+/* =========================
+LAYOUT
+========================= */
+
+.container{
+    width:90%;
+    max-width:1150px;
+    margin:auto;
+}
+
+section{
+    padding:120px 0;
+}
+
+/* =========================
+NAV (GLASS PREMIUM)
+========================= */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    backdrop-filter:blur(18px);
+    background:rgba(10,10,12,0.55);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+    z-index:100;
+}
+
+nav .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 0;
+}
+
+nav b{
+    letter-spacing:2px;
+    font-weight:700;
+}
+
+nav a{
+    margin-left:18px;
+    color:white;
+    text-decoration:none;
+    font-size:13px;
+    opacity:0.7;
+    transition:0.3s;
+}
+
+nav a:hover{
+    opacity:1;
+    color:#d4af37;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:clamp(3.2rem,7vw,5.8rem);
+    line-height:1.05;
+    letter-spacing:-2px;
+}
+
+.gold{
+    background:linear-gradient(90deg,#d4af37,#fff2a8,#d4af37);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    margin-top:20px;
+    max-width:600px;
+    color:#bdbdbd;
+    font-size:15px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    margin-top:28px;
+    padding:15px 28px;
+    border-radius:14px;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn-gold{
+    background:linear-gradient(135deg,#d4af37,#b8860b);
+    color:#000;
+}
+
+.btn:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(212,175,55,0.15);
+}
+
+/* =========================
+CARDS (LUXURY GLASS)
+========================= */
+
+.card{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:18px;
+    padding:24px;
+    transition:0.35s;
+    position:relative;
+    overflow:hidden;
+}
+
+.card::before{
+    content:'';
+    position:absolute;
+    inset:-2px;
+    background:linear-gradient(120deg,transparent,rgba(212,175,55,0.15),transparent);
+    transform:translateX(-100%);
+    transition:0.6s;
+}
+
+.card:hover::before{
+    transform:translateX(100%);
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    border-color:#d4af37;
+    box-shadow:0 25px 60px rgba(0,0,0,0.6);
+}
+
+/* =========================
+GRID
+========================= */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:22px;
+}
+
+/* =========================
+TIMELINE (EXECUTIVE)
+========================= */
+
+.timeline{
+    border-left:2px solid #d4af37;
+    padding-left:22px;
+}
+
+.timeline-item{
+    margin-bottom:22px;
+    position:relative;
+    padding-left:10px;
+}
+
+.timeline-item::before{
+    content:'';
+    position:absolute;
+    left:-12px;
+    top:6px;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#d4af37;
+    box-shadow:0 0 15px rgba(212,175,55,0.5);
+}
+
+/* =========================
+CONTACT (PREMIUM CARDS)
+========================= */
+
+.contact{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:16px;
+}
+
+.contact a{
+    text-decoration:none;
+    color:white;
+    padding:18px;
+    border-radius:14px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.contact a:hover{
+    background:rgba(212,175,55,0.12);
+    border-color:#d4af37;
+    transform:translateY(-8px);
+}
+
+/* =========================
+ANIMATION
+========================= */
+
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:0.8s ease;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<!-- NAV -->
+<nav>
+<div class="container">
+    <b>EXECUTIVE</b>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="container">
+
+    <h1 class="fade">
+        Elite <span class="gold">Executive</span><br>
+        Portfolio Experience
+    </h1>
+
+    <p class="fade">
+        A high-end digital presence designed for consultants, executives, and premium professionals.
+    </p>
+
+    <a href="#work" class="btn btn-gold fade">Explore Work</a>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="container">
+
+    <h2 class="fade">About</h2>
+    <p class="fade" style="margin-top:10px;color:#bdbdbd;">
+        Strategic thinker with experience in delivering high-impact business and digital solutions.
+    </p>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<div class="container">
+
+    <h2 class="fade">Experience</h2>
+
+    <div class="timeline fade">
+
+        <div class="timeline-item">
+            <b>Senior Executive Consultant</b><br>
+            Leading strategic business solutions
+        </div>
+
+        <div class="timeline-item">
+            <b>Project Director</b><br>
+            Managed high-level corporate projects
+        </div>
+
+        <div class="timeline-item">
+            <b>Business Analyst</b><br>
+            Data-driven decision making role
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+<div class="container">
+
+    <h2 class="fade">Work Samples</h2>
+
+    <div class="grid">
+
+        <div class="card fade">
+            <h3>Corporate Strategy</h3>
+            <p style="color:#bdbdbd;">High-level business transformation project</p>
+        </div>
+
+        <div class="card fade">
+            <h3>Operations System</h3>
+            <p style="color:#bdbdbd;">Efficiency optimization framework</p>
+        </div>
+
+        <div class="card fade">
+            <h3>Digital Leadership</h3>
+            <p style="color:#bdbdbd;">Enterprise digital transformation</p>
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<div class="container">
+
+    <h2 class="fade">Services</h2>
+
+    <div class="grid">
+
+        <div class="card fade">Business Strategy</div>
+        <div class="card fade">Executive Consulting</div>
+        <div class="card fade">Project Leadership</div>
+
+    </div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="container">
+
+    <h2 class="fade">Contact</h2>
+
+    <div class="contact fade">
+
+        <a href="mailto:your@email.com">
+            Email
+            <small>Direct communication</small>
+        </a>
+
+        <a href="https://linkedin.com">
+            LinkedIn
+            <small>Professional network</small>
+        </a>
+
+        <a href="#">
+            Portfolio
+            <small>Selected works</small>
+        </a>
+
+    </div>
+
+</div>
+</section>
+
+<script>
+
+const items=document.querySelectorAll('.fade');
+
+function show(){
+    const trigger=window.innerHeight*0.85;
+
+    items.forEach(el=>{
+        if(el.getBoundingClientRect().top<trigger){
+            el.classList.add('show');
+        }
+    });
+}
+
+window.addEventListener('scroll',show);
+show();
+
+</script>
+
+</body>
+</html>
